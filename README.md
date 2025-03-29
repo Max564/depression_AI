@@ -12,3 +12,9 @@ Lifestyle & Wellbeing: Sleep Duration, Dietary Habits, Work Pressure, Job Satisf
 Additional Factors: Profession, Degree, Financial Stress, Family History of Mental Illness, and whether the student has ever had suicidal thoughts
 
 cleaning the data:
+we find that there is no null but there is some faulty data, and we need to remove all descriptive data to create a new feature for
+this kind of data, for example in sleep there is 5 to 7 hours and there less than 5 we need to standrize all these data and group them.
+
+
+
+
