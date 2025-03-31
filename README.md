@@ -11,10 +11,29 @@ Academic Indicators: CGPA, Academic Pressure, Study Satisfaction
 Lifestyle & Wellbeing: Sleep Duration, Dietary Habits, Work Pressure, Job Satisfaction, Work/Study Hours
 Additional Factors: Profession, Degree, Financial Stress, Family History of Mental Illness, and whether the student has ever had suicidal thoughts
 
-cleaning the data:
-we find that there is no null but there is some faulty data, and we need to remove all descriptive data to create a new feature for
-this kind of data, for example in sleep there is 5 to 7 hours and there less than 5 we need to standrize all these data and group them.
+categrize data: gender, city, sleep duration, dietary habits, degree
+numrical data = age, CGPA, AP, Study Satisfaction, work pressure, job satisfaction, work/study hours, Financial stress, family mental illness, suicidal thoughts.
+
+after the clean:
+
+layer Structure:
+Input layer with 64 neurons (ReLU activation)
+Dropout layer (20% rate) for regularization
+Hidden layer with 32 neurons (ReLU activation)
+Output layer with 1 neuron (sigmoid activation)
+
+Optimizer: Adam is a good default choice (adaptive learning rate)
+Loss Function: Correctly using binary_crossentropy for binary classification
+Metrics: Tracking accuracy is standard for classification
+
+Performance Analysis:
+Training Accuracy: 89.12% (good)
+Validation Accuracy: 83.26% (reasonable)
+Gap Analysis:
+~6% difference between train/val accuracy suggests slight overfitting
+Val loss (0.4314) > Train loss (0.2601) confirms this
 
 
+This model performs well (89% train accuracy) but could improve in generalization (val accuracy: 83%).
 
 
